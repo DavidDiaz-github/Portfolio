@@ -1,0 +1,86 @@
+.profile{
+    font-family: 'Righteous', cursive;
+    background-color: rgba(251, 251, 251, 0.856);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    &__skill{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+
+    
+    .ant-row{
+        display: flex;
+        justify-content: center;
+    }
+    .foto{
+        margin: 20px 0;
+        width: 20%;
+        border-radius: 50px;
+    }
+    p{
+        padding: 0 15px;
+        text-align: center;
+    }
+}
+
+.btn-cv{
+    background-color: black;
+    color: snow;
+}
+
+.btn-cv:hover{
+    background-color: rgb(71, 68, 68);
+    color: snow;
+    border: none;
+}
+
+@media(max-width: 420px){
+    .profile{
+        p{
+            display: inherit;
+        }
+        &__container{
+            display: none;
+        }
+        a{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(min-width: 1920px){
+    .profile{
+        height: 1600px;
+        h2{
+            font-size: 3em;
+        }
+        p{
+            font-size: 2em;
+        }
+        .title{
+            font-size: 4em;
+        }
+    }
+    .btn-cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+        height: 3%;
+    }
+    
+}
